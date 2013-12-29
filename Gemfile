@@ -1,17 +1,20 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.16'
+
 group :development do
 	gem 'sqlite3'
 	gem 'rspec-rails', '2.6.1', :require => 'rspec-rails'
 	gem 'faker', '0.3.1'
 end
+
 group :test do
 	gem 'sqlite3'
 	gem 'rspec-rails', '2.6.1', :require => 'rspec-rails'
 	gem 'faker', '0.3.1'
 end
-group :development do
+
+group :production do
 	gem 'pg'
 end
 # Bundle edge Rails instead:
