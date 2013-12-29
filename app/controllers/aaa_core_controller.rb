@@ -1,13 +1,13 @@
 class AaaCoreController < ApplicationController
   def index
+  	@title = 'Home"'
   end
 
-  def events
-  end
-
-  def shop
+ def shop
+  	@title = "Shop"
   end
 
   def discussion
+  	@title = "Discussion Forum"
   end
 end

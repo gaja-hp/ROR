@@ -1,8 +1,15 @@
 AAAWebsites::Application.routes.draw do
+  resources :comments
+
+
+  devise_for :users
+
+  resources :events
+
+
   root :to => 'aaa_core#index'
-  get '/events', :to => 'aaa_core#events'
-  get '/shop', :to => 'aaa_core#shop'
-  get '/discussion', :to => 'aaa_core#discussion'
+  match '/shop', :to => 'aaa_core#shop'
+  match '/discussion', :to => 'aaa_core#discussion'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
